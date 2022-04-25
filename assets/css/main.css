@@ -2372,10 +2372,11 @@ input, select, textarea {
 		.image img {
 			border-radius: 8px;
 			display: block;
+			margin: 0 auto;
 		}
 
 		.image.left, .image.right {
-			max-width: 40%;
+			max-width: 50%;
 		}
 
 			.image.left img, .image.right img {
@@ -2396,18 +2397,18 @@ input, select, textarea {
 
 		.image.fit {
 			display: block;
-			margin: 0 0 2em 0;
-			width: 100%;
+			/* width: 100%; */
+			object-fit: cover;
 		}
 
 			.image.fit img {
-				width: 100%;
+				object-fit: cover;
 			}
 
 		.image.main {
 			display: block;
 			margin: 0 0 3em 0;
-			width: 100%;
+			width: 50%;
 		}
 
 			.image.main img {
@@ -2982,13 +2983,13 @@ input, select, textarea {
 		margin: 0 0 2em 0;
 	}
 
-		.spotlight .content {
-			-moz-flex: 1;
-			-webkit-flex: 1;
-			-ms-flex: 1;
-			flex: 1;
+		/* .spotlight .content {
+			-moz-flex: 2 1 auto;
+			-webkit-flex: 2 1 auto;
+			-ms-flex: 2 1 auto;
+			flex: 2 1 auto;
 		}
-
+ */
 			.spotlight .content > :last-child {
 				margin-bottom: 0;
 			}
@@ -2997,36 +2998,36 @@ input, select, textarea {
 				margin: 0 0 2em 0;
 			}
 
-		.spotlight .image {
+		/* .spotlight .image {
 			display: inline-block;
 			margin-left: 4em;
 			padding: 0.65em;
-			border-radius: 100%;
-			border: solid 1px;
-		}
+			/* border-radius: 100%; */
+			/* border: solid 1px; */
+		} */
 
 			.spotlight .image img {
 				display: block;
-				border-radius: 100%;
-				width: 16em;
+				/* border-radius: 100%; */
+				width: 100%;
 			}
 
 		@media screen and (max-width: 980px) {
 
 			.spotlight {
-				-moz-flex-direction: column-reverse;
+				/* -moz-flex-direction: column-reverse;
 				-webkit-flex-direction: column-reverse;
 				-ms-flex-direction: column-reverse;
-				flex-direction: column-reverse;
-				text-align: center;
+				flex-direction: column-reverse; */
+				/* text-align: center; */
 			}
 
 				.spotlight .content {
-					-moz-flex: 0 1 auto;
-					-webkit-flex: 0 1 auto;
-					-ms-flex: 0 1 auto;
-					flex: 0 1 auto;
-					width: 100%;
+					/* -moz-flex: 2 1 auto;
+					-webkit-flex: 2 1 auto;
+					-ms-flex: 2 1 auto;
+					flex: 2 1 auto; */
+					/* width: 100%; */
 				}
 
 					.spotlight .content header.major h2:after {
